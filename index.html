@@ -9,58 +9,59 @@
         <meta property="og:title" content="Blog - Estudio Capobianco">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://adaitw-portfolio.vercel.app/">
-        <meta property="og:image" content="https://i.postimg.cc/SQXrVrgZ/logoEC.jpg">
+        <meta property="og:image" content="https://i.postimg.cc/J0SVv1WV/logo-original.jpg">
         <meta property="og:description" content="Blog de Novedades del Estudio Capobianco">
         <meta property="og:site_name" content="Blog - Estudio Capobianco">
+        <link rel="shortcut icon" href="./src/img/logo/iconoEC.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./src/styles.css">
+        <link rel="stylesheet" href="./src/css/styles.css">
         <title>Estudio Capobianco Blog</title>
     </head>
     <body>
-        <header>
-            <img src="./src/img/logoEC.jpg" alt="Logo de Estudio Capobianco">
+        <header class="main-navbar">
+            <img src="./src/img/logo/logoECw.png" alt="Logo de Estudio Capobianco">
             <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#subcribirse">Suscribirse</a></li>
-                    <li><a href="https://www.estudiocapobianco.com.ar/" target="_blank">Estudio Capobianco</a></li>
-                    <li><a href="https://www.instagram.com/estudio_capobianco/" target="_blank">Instagram</a></li>
+                <ul class="nav-list">
+                    <li><a href="#" class="text-button text-button-md is-active">Inicio</a></li>
+                    <li><a href="#subcribirse" class="text-button text-button-md">Suscribirse</a></li>
+                    <li><a href="https://www.estudiocapobianco.com.ar/" target="_blank" class="button button-primary">Estudio Capobianco</a></li>
+                    <li><a href="https://www.instagram.com/estudio_capobianco/" target="_blank" class="button button-secondary">Instagram</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1>Estudio Capobianco Blog</h1>
+            <h1>Novedades Laborales</h1>
             <section class="main-posts">
-
+                FEATURED POSTS
             </section>
-            <section class="posts-list">
-                <div>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Todos</a></li>
-                            <li><a href="#">Novedades</a></li>
-                            <li><a href="#">Convenios</a></li>
-                            <li><a href="#">Liquidación</a></li>
-                            <li><a href="#">Sindicatos</a></li>
-                            <li><a href="#">Impuestos</a></li>
-                        </ul>
-                        <input type="text" name="search" id="search" placeholder="Buscar">
-                    </nav>
-                </div>
-                <article class="card">
-                    <img src="src/img/posts/1.jpg" alt="Imagen del Post">
-                    <section>
-                        <header>
-                            <div class="tags">
-                                <span><a href="#">Novedades</a></span>
-                                <span><a href="#">Liquidación</a></span>
-                            </div>
-                            <h2>Título del Post</h2>
-                        </header>
-                        <p>Descripción del post</p>
+            <section class="posts-list-container">
+                <nav class="tags-filter">
+                    <ul class="nav-list">
+                        <li><a href="#">Todos</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Convenios</a></li>
+                        <li><a href="#">Liquidación</a></li>
+                        <li><a href="#">Sindicatos</a></li>
+                        <li><a href="#">Impuestos</a></li>
+                    </ul>
+                    <input type="text" name="search" id="search" placeholder="Buscar">
+                </nav>
+                <div class="post-list">
+                    <article class="card">
+                        <section>
+                            <header>
+                                <img src="src/img/posts/1.jpg" alt="Imagen del Post">
+                                <div class="tags">
+                                    <span class="tag"><a href="#">Novedades</a></span>
+                                    <span class="tag"><a href="#">Liquidación</a></span>
+                                </div>
+                                <h2>Título del Post</h2>
+                            </header>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                        </section>
                         <footer>
                             <div class="author">
                                 <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
@@ -68,19 +69,19 @@
                             </div>    
                             <span class="reading-time">8 min lectura</span>                
                         </footer>
-                    </section>
-                </article>
-                <article class="card">
-                    <img src="src/img/posts/2.jpg" alt="Imagen del Post">
-                    <section>
-                        <header>
-                            <div class="tags">
-                                <span><a href="#">Sindicatos</a></span>
-                                <span><a href="#">Liquidación</a></span>
-                            </div>
-                            <h2>Título del Post</h2>
-                        </header>
-                        <p>Descripción del post</p>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <header>
+                                <img src="src/img/posts/2.jpg" alt="Imagen del Post">
+                                <div class="tags">
+                                    <span class="tag"><a href="#">Sindicatos</a></span>
+                                    <span class="tag"><a href="#">Liquidación</a></span>
+                                </div>
+                                <h2>Título del Post</h2>
+                            </header>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                        </section>
                         <footer>
                             <div class="author">
                                 <img src="src/img/avatars/2.png" alt="Imagen del Autor">
@@ -88,19 +89,19 @@
                             </div>    
                             <span class="reading-time">8 min lectura</span>                
                         </footer>
-                    </section>
-                </article>
-                <article class="card">
-                    <img src="src/img/posts/3.jpg" alt="Imagen del Post">
-                    <section>
-                        <header>
-                            <div class="tags">
-                                <span><a href="#">Impuestos</a></span>
-                                <span><a href="#">Liquidación</a></span>
-                            </div>
-                            <h2>Título del Post</h2>
-                        </header>
-                        <p>Descripción del post</p>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <header>
+                                <img src="src/img/posts/3.jpg" alt="Imagen del Post">
+                                <div class="tags">
+                                    <span class="tag"><a href="#">Impuestos</a></span>
+                                    <span class="tag"><a href="#">Liquidación</a></span>
+                                </div>
+                                <h2>Título del Post</h2>
+                            </header>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                        </section>
                         <footer>
                             <div class="author">
                                 <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
@@ -108,19 +109,19 @@
                             </div>    
                             <span class="reading-time">8 min lectura</span>                
                         </footer>
-                    </section>
-                </article>
-                <article class="card">
-                    <img src="src/img/posts/4.jpg" alt="Imagen del Post">
-                    <section>
-                        <header>
-                            <div class="tags">
-                                <span><a href="#">Novedades</a></span>
-                                <span><a href="#">Convenios</a></span>
-                            </div>
-                            <h2>Título del Post</h2>
-                        </header>
-                        <p>Descripción del post</p>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <header>
+                                <img src="src/img/posts/corp.png" alt="Imagen del Post">
+                                <div class="tags">
+                                    <span class="tag"><a href="#">Novedades</a></span>
+                                    <span class="tag"><a href="#">Convenios</a></span>
+                                </div>
+                                <h2>Título del Post</h2>
+                            </header>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                        </section>
                         <footer>
                             <div class="author">
                                 <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
@@ -128,18 +129,18 @@
                             </div>    
                             <span class="reading-time">8 min lectura</span>                
                         </footer>
-                    </section>
-                </article>
-                <article class="card">
-                    <img src="src/img/posts/5.jpg" alt="Imagen del Post">
-                    <section>
-                        <header>
-                            <div class="tags">
-                                <span><a href="#">Impuestos</a></span>
-                            </div>
-                            <h2>Título del Post</h2>
-                        </header>
-                        <p>Descripción del post</p>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <header>
+                                <img src="src/img/posts/5.jpg" alt="Imagen del Post">
+                                <div class="tags">
+                                    <span class="tag"><a href="#">Impuestos</a></span>
+                                </div>
+                                <h2>Título del Post</h2>
+                            </header>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                        </section>
                         <footer>
                             <div class="author">
                                 <img src="src/img/avatars/2.png" alt="Imagen del Autor">
@@ -147,39 +148,20 @@
                             </div>    
                             <span class="reading-time">8 min lectura</span>                
                         </footer>
-                    </section>
-                </article>
-                <article class="card">
-                    <img src="src/img/posts/6.jpg" alt="Imagen del Post">
-                    <section>
-                        <header>
-                            <div class="tags">
-                                <span><a href="#">Convenios</a></span>
-                                <span><a href="#">Sindicatos</a></span>
-                                <span><a href="#">Liquidación</a></span>
-                            </div>
-                            <h2>Título del Post</h2>
-                        </header>
-                        <p>Descripción del post</p>
-                        <footer>
-                            <div class="author">
-                                <img src="src/img/avatars/2.png" alt="Imagen del Autor">
-                                <span>Nombre del autor</span>
-                            </div>    
-                            <span class="reading-time">8 min lectura</span>                
-                        </footer>
-                    </section>
-                </article>
-                <article class="card">
-                    <img src="src/img/posts/7.jpg" alt="Imagen del Post">
-                    <section>
-                        <header>
-                            <div class="tags">
-                                <span><a href="#">Liquidación</a></span>
-                            </div>
-                            <h2>Título del Post</h2>
-                        </header>
-                        <p>Descripción del post</p>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <header >
+                                <img src="src/img/posts/6.jpg" alt="Imagen del Post">
+                                <div class="tags">
+                                    <span class="tag"><a href="#">Convenios</a></span>
+                                    <span class="tag"><a href="#">Sindicatos</a></span>
+                                    <span class="tag"><a href="#">Liquidación</a></span>
+                                </div>
+                                <h2>Título del Post</h2>
+                            </header>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                        </section>
                         <footer>
                             <div class="author">
                                 <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
@@ -187,8 +169,47 @@
                             </div>    
                             <span class="reading-time">8 min lectura</span>                
                         </footer>
-                    </section>
-                </article>            
+                    </article>
+                    <article class="card">
+                        <section>
+                            <header>
+                                <img src="src/img/posts/4.jpg" alt="Imagen del Post">
+                                <div class="tags">
+                                    <span class="tag"><a href="#">Liquidación</a></span>
+                                </div>
+                                <h2>Título del Post</h2>
+                            </header>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                        </section>
+                        <footer>
+                            <div class="author">
+                                <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
+                                <span>Nombre del autor</span>
+                            </div>    
+                            <span class="reading-time">8 min lectura</span>                
+                        </footer>
+                    </article>
+                    <article class="card">
+                        <section>
+                            <header>
+                                <img src="src/img/posts/corp.png" alt="Imagen del Post">
+                                <div class="tags">
+                                    <span class="tag"><a href="#">Novedades</a></span>
+                                    <span class="tag"><a href="#">Convenios</a></span>
+                                </div>
+                                <h2>Título del Post</h2>
+                            </header>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                        </section>
+                        <footer>
+                            <div class="author">
+                                <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
+                                <span>Nombre del autor</span>
+                            </div>    
+                            <span class="reading-time">8 min lectura</span>                
+                        </footer>
+                    </article>
+                </div>        
             </section>
             <aside>
                 <h2>¿Queres recibir novedades por email? Suscribite!</h2>
