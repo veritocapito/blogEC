@@ -10,7 +10,7 @@
         <!-- Metadatos para redes sociales -->
         <meta property="og:title" content="Blog - Estudio Capobianco">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://adaitw-portfolio.vercel.app/">
+        <meta property="og:url" content="https://blog-estudio-capobianco.vercel.app/">
         <meta property="og:image" content="https://i.postimg.cc/J0SVv1WV/logo-original.jpg">
         <meta property="og:description" content="Blog de Novedades del Estudio Capobianco">
         <meta property="og:site_name" content="Blog - Estudio Capobianco">
@@ -20,6 +20,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./src/css/styles.css">
+        <link rel="stylesheet" href="./src/css/tablet.css">
         <title>Estudio Capobianco Blog</title>
     </head>
     <body>
@@ -39,14 +40,18 @@
         <main>
             <h1>Novedades Laborales</h1>
             <!-- Posts Principales -->
-            <section class="main-posts">
-                FEATURED POSTS
+            <section class="featured-posts">
+                <article></article>
+                <div class="nav-posts">
+                    <a><i class="bi bi-arrow-left"></i></a>
+                    <a><i class="bi bi-arrow-right"></i></a>
+                </div>
             </section>
             <section class="posts-list-container">
                 <!-- Lista de Etiquetas -->
                 <nav class="tags-filter">
                     <ul class="nav-list">
-                        <li><a href="#" class="tag-name is-active-filter">Todos</a></li>
+                        <li><a href="#" class="tag-name tag-selected">Todos</a></li>
                         <li><a href="#" class="tag-name">Novedades</a></li>
                         <li><a href="#" class="tag-name">Convenios</a></li>
                         <li><a href="#" class="tag-name">Liquidación</a></li>
@@ -121,8 +126,7 @@
                         <section class="sec-extended">
                             <header>
                                 <div class="tags">
-                                    <span class="tag tag-alt"><a href="#">Novedades</a></span>
-                                    <span class="tag tag-alt"><a href="#">Convenios</a></span>
+                                    <span class="tag tag-alt"><a href="#">Más Leídos</a></span>
                                 </div>
                                 <h2 class="title">Título del Post</h2>
                             </header>
@@ -131,8 +135,7 @@
                                 <div class="author">
                                     <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
                                     <span>Verónica Capobianco</span>
-                                </div>    
-                                <span class="reading-time">8 min lectura</span>                
+                                </div>        
                             </footer>
                         </section>
                     </article>
@@ -194,43 +197,65 @@
                             </footer>
                         </section>
                     </article>
-                    <article class="card card-extended">
-                        <img src="src/img/posts/corp.png" alt="Imagen del Post">
-                        <h2 class="title">Título del Post</h2>
+                    <article class="card card-extended card-inverted">
+                        <img src="src/img/logo/logoECb.jpg" alt="Imagen del Post">
+                        <section>
+                        <header>
+                            <div class="tags">
+                                <span class="tag tag-alt"><a href="#">Más Leídos</a></span>
+                            </div>
+                            <h2 class="title">Título del Post</h2>
+                        </header>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                        <footer>
+                            <div class="author">
+                                <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
+                                <span>Verónica Capobianco</span>                
+                            </div>    
+                        </footer>
+                    </section>
                     </article>
                 </div>        
             </section>
-            <!-- Formulario de suscripción -->
-            <aside>
-                <form action="#" method="post" id="subcribirse">
-                    <h2 class="form-title">¿Queres recibir novedades por email? Suscribite!</h2>
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-
-                    <label for="telefono">Telefono Móvil:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-                    
-                    <label for="comoNosConociste">¿Cómo nos conociste?</label>
-                        <select id="comoNosConociste" name="comoNosConociste" required>
-                            <option value="empty" >Elegí una opción...</option>
-                            <option value="redesSociales">Redes Sociales</option>
-                            <option value="colega">Por un Colega</option>
-                            <option value="google">Google</option>
-                            <option value="instagram">Instagram</option>
-                        </select>
-                        
-                    <label class="confirmaSubscripcion">
-                        <input type="checkbox" name="confirmaSubscripcion" required>
-                        Si, acepto recibir novedades por email de Estudio Capobianco.
-                    </label>
-                    <input type="submit" value="Suscribirse">
-                </form>
-            </aside>
         </main>
+        <!-- Formulario de suscripción -->
+        <aside>
+            <form action="#" method="post" id="subcribirse">
+                <h2 class="form-title">¿Queres recibir novedades por email? Suscribite!</h2>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Telefono Móvil:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="comoNosConociste">¿Cómo nos conociste?</label>
+                    <select id="comoNosConociste" name="comoNosConociste" required>
+                        <option value="empty" >Elegí una opción...</option>
+                        <option value="redesSociales">C.P.C.E.C.A.B.A.</option>
+                        <option value="colega">Recomendación de un Colega</option>
+                        <option value="google">Búsqueda en Google</option>
+                        <option value="instagram">Publicidad en Instagram</option>
+                    </select>
+                    
+                <label class="confirmaSubscripcion">
+                    <input type="checkbox" name="confirmaSubscripcion" required>
+                    Si, acepto recibir novedades por email de Estudio Capobianco.
+                </label>
+                <input type="submit" value="Suscribirse">
+            </form>
+        </aside>
         <!-- Pie de pagina -->
-        <footer class="footer-container">footer</footer>
+        <footer class="footer-container">
+            <div class="social-media">
+                <a href="https://www.estudiocapobianco.com.ar" target="_blank" class="social-icon"><i class="bi bi-globe2"></i></a>
+                <a href="https://www.instagram.com/estudio_capobianco" target="_blank" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/541132158576?text=Hola!%20Quiero%20hacer%20una%20consulta..." target="_blank" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:info@estudiocapobianco.com.ar" class="social-icon" ><i class="bi bi-envelope-at-fill"></i></a>
+            </div>
+            <p>© 2024 - Estudio Capobianco</p>            
+        </footer>
     </body>
 </html>
