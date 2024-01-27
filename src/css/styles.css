@@ -1,3 +1,4 @@
+/* Variables de color y tamaño */
 :root{
     --color-back: #eeeeee;
     --color-main: #e68c29;
@@ -10,25 +11,34 @@
     --max-width: 1180px;
 }
 
+/* Estilos generales del cuerpo del documento */
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Outfit', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 20px;
     max-width: var(--max-width);
     background-color: var(--color-back);
 }
 
+/* Estilo general para links */
 a{
     text-decoration: none;
 }
 
+/* Estilos para la barra de navegación principal */
 .main-navbar{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .main-navbar img{
@@ -45,14 +55,10 @@ a{
     line-height: 19px;
 }
 
-.is-active{
-    color: var(--color-main);
-}
-
 .button{
     display: inline-flex;
     align-items: center;
-    padding: 12px 16px;
+    padding: 12px;
     gap: 8px;
     height: 45px;
     border-radius: 2px;
@@ -81,10 +87,12 @@ a{
     opacity: 0.8;
 }
 
+/* Estilos para el contenido principal */
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 main h1{
@@ -95,7 +103,7 @@ main h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
 }
 
 .tags-filter{
@@ -125,11 +133,18 @@ main h1{
     outline-color: var(--color-lGrey);
 }
 
+/* Estilos para la lista de publicaciones */
 .posts-list-container{
     display: flex;
     flex-direction: column;
     gap: 48px;
-    padding: 0 20px;
+}
+
+.title{
+    font-weight: 600;
+    color: var(--color-blue);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .post-list{
@@ -142,10 +157,11 @@ main h1{
 
 }
 
+/* Estilos para cada publicación */
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 16px 0;
     padding: 16px;
     background: var(--color-xlLight);
@@ -155,7 +171,9 @@ main h1{
 .card section {
     display: flex;
     flex-direction: column;
-    gap: 8px 0;
+    justify-content: space-between;
+    height: 100%;
+    gap: 16px 0;
 }
 
 .card header{
@@ -181,8 +199,8 @@ main h1{
 
 .card footer{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+
 }
 
 .author{
@@ -192,9 +210,8 @@ main h1{
 }
 
 .author img {
-    width: 100%;
-    max-width: 40px;
-    max-height: 40px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
@@ -210,9 +227,115 @@ main h1{
     font-size: 13px;
     line-height: 19px;
     color: var(--color-grey);
+    text-align: right;
+}
+
+.tag{
+    padding: 6px 8px;
+    background: var(--color-pink);
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.tag a{
+    color: var(--color-xlLight);
+}
+
+.tag-alt{
+    background: var(--color-main);
+}
+
+.tags{
+    display: flex;
+    gap: 8px;
+}
+
+/* Estilos para Subscripciones */
+aside{
+    padding: 50px 0;
+}
+
+.form-title{
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-blue);
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--color-grey);
+}
+
+form input[type="email"],
+form input[type="text"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid var(--color-lGrey);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+form input[type="checkbox"] {
+    font-size: 10px;
+    margin-right: 8px;
+    width: calc(10% - 8px);
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-main);
+    color: var(--color-back);
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+form input:focus,
+form select:focus{
+    outline-color: var(--color-lGrey);
+}
+
+.confirmaSubscripcion{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 12px;
 }
 
 
+/* Estilos para el Footer */
+
+.footer-container {
+    width: 100vw;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    color: var(--color-back);
+    background-color: var(--color-grey);
+}
+
+/* Estilos por Media Queries */
 @media screen and (min-width: 768px){
     .main-navbar, .tags-filter{
         flex-direction: row;
@@ -224,7 +347,7 @@ main h1{
     }
 
     #search{
-        max-width: 400px;
+        max-width: 360px;
     }
 
     .nav-list{
@@ -243,9 +366,51 @@ main h1{
     }
     .post-list article:nth-child(4n){
         grid-column: 1/4;
+        padding: 48px;
     }
     .post-list article:nth-child(4n) img{
-        max-width: 300px;
+        max-width: 400px;
     }
 
+    .card{
+        padding: 0;
+    }
+
+    .card section{
+        padding: 16px;
+    }
+
+    .card-extended{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .sec-extended{
+        padding: 0 16px;
+        max-width: 400px;
+    }
+
+    form label,
+    form input[type="email"],
+    form input[type="text"],
+    form input[type="tel"],
+    form select {
+        width: calc(100% - 8px);
+    }
+
+    form input[type="checkbox"]{
+
+    }
+
+    form input[type="submit"] {
+        width: calc(50% - 8px);
+    }
+
+    fieldset{
+        border: none;
+
+    }
 }
+
