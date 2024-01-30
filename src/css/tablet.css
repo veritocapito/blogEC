@@ -60,6 +60,7 @@
 
     .featured-posts{
         align-items: flex-end;
+        height: 60vh;
     }
 
     .posts-list-container{
@@ -71,11 +72,11 @@
         grid-auto-rows: minmax(560px, auto) 400px; 
         gap: 60px 20px;
     }
-    .post-list article:nth-child(4n){
+    .post-list .card:nth-child(4n){
         grid-column: 1/4;
         padding: 48px;
     }
-    .post-list article:nth-child(4n) img{
+    .post-list .card:nth-child(4n) img{
         max-width: 400px;
     }
 
@@ -91,7 +92,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        gap: 20px;
+        justify-content: space-between;
     }
 
     .card-inverted{
@@ -119,7 +121,12 @@
         width: calc(50% - 8px);
     }
 
-    
+    aside{
+        background-image: radial-gradient(circle at 99% 33%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../img/posts/contacto.jpg') ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 

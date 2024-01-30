@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="zxx">
+
     <head>
         <!-- Metadatos descriptivos -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Blog - Estudio Capobianco">
-        <meta name="keywords" content="blog, estudio, contable, sueldos, payroll, empleados, acuerdos, convenios, impuestos, laboral, novedades">
+        <meta name="keywords"
+            content="blog, estudio, contable, sueldos, payroll, empleados, acuerdos, convenios, impuestos, laboral, novedades">
         <meta name="author" content="Veronica Capobianco">
         <!-- Metadatos para redes sociales -->
         <meta property="og:title" content="Blog - Estudio Capobianco">
@@ -18,11 +20,13 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="./src/css/styles.css">
         <link rel="stylesheet" href="./src/css/tablet.css">
         <title>Estudio Capobianco Blog</title>
     </head>
+
     <body>
         <!-- Encabezado de la página -->
         <header class="main-navbar">
@@ -30,24 +34,40 @@
             <!-- Lista de navegación -->
             <nav>
                 <ul class="nav-list">
-                    <li><a href="#subcribirse" class="text-button text-button-md">Suscribirse</a></li>
-                    <li><a href="https://www.estudiocapobianco.com.ar/" target="_blank" class="button button-primary">Estudio Capobianco</a></li>
-                    <li><a href="https://www.instagram.com/estudio_capobianco/" target="_blank" class="button button-secondary">Instagram</a></li>
+                    <li>
+                        <a href="#subcribirse" class="text-button text-button-md">Suscribirse</a>
+                    </li>
+                    <li>
+                        <a href="https://www.estudiocapobianco.com.ar/" target="_blank"
+                            class="button button-primary">Estudio Capobianco</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/estudio_capobianco/" target="_blank"
+                            class="button button-secondary">Instagram</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <!-- Contenido principal -->
         <main>
-            <h1>Novedades Laborales</h1>
             <!-- Posts Principales -->
             <section class="featured-posts">
-                <article></article>
+                <h1>Novedades Laborales</h1>
+                <div class="slider">
+                    <ul>
+                        <li><img src="./src/img/slider/noticias1.jpg" alt="Imagen de noticia destacada"></li>
+                        <li><img src="./src/img/slider/noticias2.jpg" alt="Imagen de noticia destacada"></li>
+                        <li><img src="./src/img/slider/noticias3.jpg" alt="Imagen de noticia destacada"></li>
+                        <li><img src="./src/img/slider/noticias4.jpg" alt="Imagen de noticia destacada"></li>
+                        <li><img src="./src/img/slider/noticias1.jpg" alt="Imagen de noticia destacada"></li>
+                    </ul>
+                </div>
                 <div class="nav-posts">
                     <a><i class="bi bi-arrow-left"></i></a>
                     <a><i class="bi bi-arrow-right"></i></a>
                 </div>
             </section>
-            <section class="posts-list-container">
+            <div class="posts-list-container">
                 <!-- Lista de Etiquetas -->
                 <nav class="tags-filter">
                     <ul class="nav-list">
@@ -62,28 +82,34 @@
                 </nav>
                 <!-- Listado de Posts -->
                 <div class="post-list">
-                    <article class="card">
-                        <img src="src/img/posts/1.jpg" alt="Imagen del Post">
+                    <div class="card">
+                        <figure>
+                            <img src="src/img/posts/1.jpg" alt="Imagen del Post" loading="lazy">
+                        </figure>
                         <section>
                             <header>
                                 <div class="tags">
                                     <span class="tag"><a href="#">Novedades</a></span>
                                     <span class="tag"><a href="#">Liquidación</a></span>
                                 </div>
-                                <h2 class="title">Título del Post</h2>
                             </header>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                            <h2 class="title">Título del Post</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat
+                                porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam
+                                animi hic molestiae reprehenderit voluptates!</p>
                             <footer>
                                 <div class="author">
                                     <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
                                     <span>Verónica Capobianco</span>
-                                </div>    
-                                <span class="reading-time">8 min lectura</span>                
+                                </div>
+                                <span class="reading-time">8 min lectura</span>
                             </footer>
                         </section>
-                    </article>
-                    <article class="card">
-                        <img src="src/img/posts/2.jpg" alt="Imagen del Post">
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="src/img/posts/2.jpg" alt="Imagen del Post" loading="lazy">
+                        </figure>
                         <section>
                             <header>
                                 <div class="tags">
@@ -91,132 +117,156 @@
                                 </div>
                                 <h2 class="title">Título del Post</h2>
                             </header>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat
+                                porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam
+                                animi hic molestiae reprehenderit voluptates!</p>
                             <footer>
                                 <div class="author">
-                                    <img src="src/img/avatars/2.png" alt="Imagen del Autor">
+                                    <img src="src/img/avatars/2.png" alt="Imagen del Autor" loading="lazy">
                                     <span>Candela Gallina</span>
-                                </div>    
-                                <span class="reading-time">8 min lectura</span>                
+                                </div>
+                                <span class="reading-time">8 min lectura</span>
                             </footer>
                         </section>
-                    </article>
-                    <article class="card">
-                        <img src="src/img/posts/3.jpg" alt="Imagen del Post">
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="src/img/posts/3.jpg" alt="Imagen del Post" loading="lazy">
+                        </figure>                        
                         <section>
                             <header>
                                 <div class="tags">
                                     <span class="tag"><a href="#">Impuestos</a></span>
                                     <span class="tag"><a href="#">Liquidación</a></span>
                                 </div>
-                                <h2 class="title">Título del Post</h2>
                             </header>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                            <h2 class="title">Título del Post</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat
+                                porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam
+                                animi hic molestiae reprehenderit voluptates!</p>
                             <footer>
                                 <div class="author">
-                                    <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
+                                    <img src="src/img/avatars/1.jpg" alt="Imagen del Autor" loading="lazy">
                                     <span>Verónica Capobianco</span>
-                                </div>    
-                                <span class="reading-time">8 min lectura</span>                
+                                </div>
+                                <span class="reading-time">8 min lectura</span>
                             </footer>
                         </section>
-                    </article>
-                    <article class="card card-extended">
-                        <img src="src/img/posts/acuerdo.jpg" alt="Imagen del Post">
+                    </div>
+                    <div class="card card-extended">
+                        <figure>
+                            <img src="src/img/posts/7.jpg" alt="Imagen del Post" loading="lazy">
+                        </figure>
                         <section class="sec-extended">
                             <header>
                                 <div class="tags">
                                     <span class="tag tag-alt"><a href="#">Más Leídos</a></span>
                                 </div>
-                                <h2 class="title">Título del Post</h2>
                             </header>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                            <h2 class="title">Título del Post</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat
+                                porro suscipit iusto deserunt aliquid molestias minus.</p>
                             <footer>
                                 <div class="author">
-                                    <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
+                                    <img src="src/img/avatars/1.jpg" alt="Imagen del Autor" loading="lazy">
                                     <span>Verónica Capobianco</span>
-                                </div>        
+                                </div>
                             </footer>
                         </section>
-                    </article>
-                    <article class="card">
-                        <img src="src/img/posts/5.jpg" alt="Imagen del Post">
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="src/img/posts/5.jpg" alt="Imagen del Post" loading="lazy">
+                        </figure>
                         <section>
                             <header>
                                 <div class="tags">
                                     <span class="tag"><a href="#">Impuestos</a></span>
                                 </div>
-                                <h2 class="title">Título del Post</h2>
                             </header>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                            <h2 class="title">Título del Post</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat
+                                porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam
+                                animi hic molestiae reprehenderit voluptates!</p>
                             <footer>
                                 <div class="author">
-                                    <img src="src/img/avatars/2.png" alt="Imagen del Autor">
+                                    <img src="src/img/avatars/2.png" alt="Imagen del Autor" loading="lazy">
                                     <span>Candela Gallina</span>
-                                </div>    
-                                <div class="reading-time">8 min lectura</div>                
+                                </div>
+                                <div class="reading-time">8 min lectura</div>
                             </footer>
                         </section>
-                    </article>
-                    <article class="card">
-                        <img src="src/img/posts/6.jpg" alt="Imagen del Post">
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="src/img/posts/6.jpg" alt="Imagen del Post" loading="lazy">
+                        </figure>
                         <section>
-                            <header >
+                            <header>
                                 <div class="tags">
                                     <span class="tag"><a href="#">Convenios</a></span>
                                     <span class="tag"><a href="#">Sindicatos</a></span>
                                 </div>
-                                <h2 class="title">Título del Post</h2>
                             </header>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                            <h2 class="title">Título del Post</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat
+                                porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam
+                                animi hic molestiae reprehenderit voluptates!</p>
                             <footer>
                                 <div class="author">
-                                    <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
+                                    <img src="src/img/avatars/1.jpg" alt="Imagen del Autor" loading="lazy">
                                     <span>Verónica Capobianco</span>
-                                </div>    
-                                <span class="reading-time">8 min lectura</span>                
+                                </div>
+                                <span class="reading-time">8 min lectura</span>
                             </footer>
                         </section>
-                    </article>
-                    <article class="card">
-                        <img src="src/img/posts/4.jpg" alt="Imagen del Post">
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="src/img/posts/4.jpg" alt="Imagen del Post" loading="lazy">
+                        </figure>
                         <section>
                             <header>
                                 <div class="tags">
                                     <span class="tag"><a href="#">Liquidación</a></span>
                                 </div>
-                                <h2 class="title">Título del Post</h2>
                             </header>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
+                            <h2 class="title">Título del Post</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat
+                                porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam
+                                animi hic molestiae reprehenderit voluptates!</p>
                             <footer>
                                 <div class="author">
-                                    <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
+                                    <img src="src/img/avatars/1.jpg" alt="Imagen del Autor" loading="lazy">
                                     <span>Verónica Capobianco</span>
-                                </div>    
-                                <span class="reading-time">8 min lectura</span>                
+                                </div>
+                                <span class="reading-time">8 min lectura</span>
                             </footer>
                         </section>
-                    </article>
-                    <article class="card card-extended card-inverted">
-                        <img src="src/img/logo/logoECb.jpg" alt="Imagen del Post">
+                    </div>
+                    <div class="card card-extended card-inverted">
+                        <figure>
+                            <img src="src/img/posts/8.jpg" alt="Imagen del Post" loading="lazy">
+                        </figure>
                         <section>
-                        <header>
-                            <div class="tags">
-                                <span class="tag tag-alt"><a href="#">Más Leídos</a></span>
-                            </div>
+                            <header>
+                                <div class="tags">
+                                    <span class="tag tag-alt"><a href="#">Más Leídos</a></span>
+                                </div>
+                            </header>
                             <h2 class="title">Título del Post</h2>
-                        </header>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam animi hic molestiae reprehenderit voluptates!</p>
-                        <footer>
-                            <div class="author">
-                                <img src="src/img/avatars/1.jpg" alt="Imagen del Autor">
-                                <span>Verónica Capobianco</span>                
-                            </div>    
-                        </footer>
-                    </section>
-                    </article>
-                </div>        
-            </section>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat
+                                porro suscipit iusto deserunt aliquid molestias minus.</p>
+                            <footer>
+                                <div class="author">
+                                    <img src="src/img/avatars/1.jpg" alt="Imagen del Autor" loading="lazy">
+                                    <span>Verónica Capobianco</span>
+                                </div>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+            </div>
         </main>
         <!-- Formulario de suscripción -->
         <aside>
@@ -224,22 +274,22 @@
                 <h2 class="form-title">¿Queres recibir novedades por email? Suscribite!</h2>
                 <label for="email">Correo Electrónico:</label>
                 <input type="email" id="email" name="email" required>
-            
+
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
                 <label for="telefono">Telefono Móvil:</label>
                 <input type="tel" id="telefono" name="telefono" required>
-                
+
                 <label for="comoNosConociste">¿Cómo nos conociste?</label>
-                    <select id="comoNosConociste" name="comoNosConociste" required>
-                        <option value="empty" >Elegí una opción...</option>
-                        <option value="redesSociales">C.P.C.E.C.A.B.A.</option>
-                        <option value="colega">Recomendación de un Colega</option>
-                        <option value="google">Búsqueda en Google</option>
-                        <option value="instagram">Publicidad en Instagram</option>
-                    </select>
-                    
+                <select id="comoNosConociste" name="comoNosConociste" required>
+                    <option value="">Elegí una opción...</option>
+                    <option value="redesSociales">C.P.C.E.C.A.B.A.</option>
+                    <option value="colega">Recomendación de un Colega</option>
+                    <option value="google">Búsqueda en Google</option>
+                    <option value="instagram">Publicidad en Instagram</option>
+                </select>
+
                 <label class="confirmaSubscripcion">
                     <input type="checkbox" name="confirmaSubscripcion" required>
                     Si, acepto recibir novedades por email de Estudio Capobianco.
@@ -250,12 +300,17 @@
         <!-- Pie de pagina -->
         <footer class="footer-container">
             <div class="social-media">
-                <a href="https://www.estudiocapobianco.com.ar" target="_blank" class="social-icon"><i class="bi bi-globe2"></i></a>
-                <a href="https://www.instagram.com/estudio_capobianco" target="_blank" class="social-icon"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.me/541132158576?text=Hola!%20Quiero%20hacer%20una%20consulta..." target="_blank" class="social-icon"><i class="bi bi-whatsapp"></i></a>
-                <a href="mailto:info@estudiocapobianco.com.ar" class="social-icon" ><i class="bi bi-envelope-at-fill"></i></a>
+                <a href="https://www.estudiocapobianco.com.ar" target="_blank" class="social-icon"><i
+                        class="bi bi-globe2"></i></a>
+                <a href="https://www.instagram.com/estudio_capobianco" target="_blank" class="social-icon"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/541132158576?text=Hola!%20Quiero%20hacer%20una%20consulta..." target="_blank"
+                    class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:info@estudiocapobianco.com.ar" class="social-icon"><i
+                        class="bi bi-envelope-at-fill"></i></a>
             </div>
-            <p>© 2024 - Estudio Capobianco</p>            
+            <p>© 2024 - Estudio Capobianco</p>
         </footer>
     </body>
+
 </html>
