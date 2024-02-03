@@ -387,6 +387,34 @@ form select:focus{
     font-style: italic;
 }
 
+/* Estilos para la vista de publicación individual */
+
+.post-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.post-selected{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-selected header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.post-selected p{
+    line-height: 1.5;
+}
+
+.back-link{
+    align-self: flex-end;
+    color: var(--color-blue);
+}
 
 /* Estilos para el Footer */
 
