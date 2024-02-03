@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <!-- Metadatos descriptivos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Blog - Estudio Capobianco">
+        <meta name="keywords"
+            content="blog, estudio, contable, sueldos, payroll, empleados, acuerdos, convenios, impuestos, laboral, novedades">
+        <meta name="author" content="Veronica Capobianco">
+        <!-- Metadatos para redes sociales -->
+        <meta property="og:title" content="Blog - Estudio Capobianco">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://blog-estudio-capobianco.vercel.app/">
+        <meta property="og:image" content="https://i.postimg.cc/RF5454Z1/blogEC.png">
+        <meta property="og:description" content="Blog de Novedades del Estudio Capobianco">
+        <meta property="og:site_name" content="Blog - Estudio Capobianco">
+        <link rel="shortcut icon" href="../src/img/logo/iconoEC.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/tablet.css">
+        <title>Estudio Capobianco Blog</title>
+    </head>
+
+    <body>
+        <!-- Encabezado de la página -->
+        <header class="main-navbar">
+            <a href="../index.html">
+                <img src="./img/logo/logoECw.png" alt="Logo de Estudio Capobianco">
+            </a>
+            <!-- Lista de navegación -->
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#subcribirse" class="text-button text-button-md">Suscribirse</a>
+                    </li>
+                    <li>
+                        <a href="https://www.estudiocapobianco.com.ar/" target="_blank"
+                            class="button button-primary"><i
+                            class="bi bi-globe2"></i>Estudio Capobianco</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/estudio_capobianco/" target="_blank"
+                            class="button button-secondary"><i
+                            class="bi bi-instagram"></i>Instagram</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Contenido principal -->
+        <main>
+            <div class="posts-list-container">
+                <!-- Lista de Etiquetas -->
+                <nav class="tags-filter">
+                    <ul class="nav-list">
+                        <li><a href="#" class="tag-name tag-selected">Todos</a></li>
+                        <li><a href="#" class="tag-name">Novedades</a></li>
+                        <li><a href="#" class="tag-name">Convenios</a></li>
+                        <li><a href="#" class="tag-name">Liquidación</a></li>
+                        <li><a href="#" class="tag-name">Sindicatos</a></li>
+                        <li><a href="#" class="tag-name">Impuestos</a></li>
+                    </ul>
+                    <input type="text" name="search" id="search" placeholder="Buscar">
+                </nav>
+                <!-- Detalle del Posts -->
+                <div class="post-selected">
+                    <figure class="post-img">
+                        <img src="../src/img/posts/1.jpg" alt="Imagen del Post" loading="lazy">
+                    </figure>
+                    <section>
+                        <header>
+                            <div class="tags">
+                                <span class="tag"><a href="#">Novedades</a></span>
+                                <span class="tag"><a href="#">Liquidación</a></span>
+                            </div>
+                        </header>
+                        <h2 class="title"><a href="./src/post.html" target="_blank">Titulo del Post</a></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum ad, illo quaerat
+                            porro suscipit iusto deserunt aliquid molestias minus, impedit laborum nesciunt magnam
+                            animi hic molestiae reprehenderit voluptates!</p>
+                        <footer>
+                            <div class="author">
+                                <img src="../src/img/avatars/1.jpg" alt="Imagen del Autor">
+                                <span>Verónica Capobianco</span>
+                            </div>
+                            <span class="reading-time">8 min lectura</span>
+                        </footer>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <!-- Pie de pagina -->
+        <footer class="footer-container">
+            <div class="social-media">
+                <a href="https://www.estudiocapobianco.com.ar" target="_blank" class="social-icon"><i
+                        class="bi bi-globe2"></i></a>
+                <a href="https://www.instagram.com/estudio_capobianco" target="_blank" class="social-icon"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/541132158576?text=Hola!%20Quiero%20hacer%20una%20consulta..." target="_blank"
+                    class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:info@estudiocapobianco.com.ar" class="social-icon"><i
+                        class="bi bi-envelope-at-fill"></i></a>
+            </div>
+            <p>© 2024 - Estudio Capobianco</p>
+        </footer>
+    </body>
+
+</html>

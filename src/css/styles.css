@@ -46,6 +46,11 @@ a{
     max-width: 280px;
 }
 
+.nav-list{
+    display: none;
+}
+
+
 /* Estilos para posts destacados */
 
 h1 {
@@ -128,10 +133,6 @@ main h1{
     font-size: 28px;
 }
 
-.nav-list{
-    display: none
-}
-
 .tags-filter{
     display: flex;
     flex-direction: column;
@@ -142,12 +143,22 @@ main h1{
 .tag-name{
     font-size: 14px;
     color: var(--color-blue);
+    font-weight: bold;
+}
+
+.tag-name:hover{
+    color: var(--color-pink);
 }
 
 .tag-selected{
     padding: 10px 15px;
     color: var(--color-back);
+    border-radius: 2px;
     background-color: var(--color-grey);
+}
+
+.tag-selected:hover{
+    color: var(--color-xlLight);
 }
 
 #search{
@@ -402,7 +413,7 @@ form select:focus{
 }
 
 .social-icon:hover {
-    color: var(--color-xlLight);
+    color: var(--color-main);
 }
 
 footer p {
